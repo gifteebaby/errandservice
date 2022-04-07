@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial">
+    <title>Errand Service Website</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="heading">
+    <h1 class="errand">ERRAND SERVICE</h1>
+    </div>
+ <nav>
+        <ul><a href="{% url 'home' %}">Home</ul>
+        <ul><a href="{% url 'about' %}">About</ul>
+        <ul><a href="{% url 'service' %}">Services</ul>
+        <ul><a href="{% url 'signup' %}">signup</ul>
+    </nav>
+ <div class="container">
+     <div class="outline"
+     {% for list in lists %}
+      <br><li> {{ list.service }}</li> <br>
+     {% endfor %}
+     </div>
+<h2></h2>
+</div>
+
+</body>
+</html>

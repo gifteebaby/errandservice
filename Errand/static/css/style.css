@@ -1,0 +1,91 @@
+ html {
+     margin: 0;
+     padding: 0;
+}
+
+
+body {
+    /* background-color: white; */
+    background-image: url('../images/errend.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    text-align: center;
+    justify-content: center;
+    color: black;
+    display: flex;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+.errand{
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+.about{
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.heading {
+    display: flex;
+    justify-content: center
+}
+.contain {
+    color: black;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.bananan{
+    text-align: center;
+    font-size: 24px;
+}
+.banda {
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.band {
+    text-align: center;
+    justify-content: b;
+    color: black;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.blue{
+    text-align: center;
+    justify-content: center;
+    color: black;
+    display: flex;
+}
+.hero {
+    text-align: center;
+    justify-content: center;
+    color: black;
+    display: flex;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.check {
+    color: black;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}

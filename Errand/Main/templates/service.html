@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+ <title>About</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial">
+    <title>Errand Service Website service</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="heading">
+        <h1 class="errand">Service</h1>
+        </div>
+     <div class="hero">
+        <nav>
+        <ul><a href="{% url 'home' %}">Home</ul>
+        <ul><a href="{% url 'about' %}">About</ul>
+        <ul><a href="{% url 'service' %}">Services</ul>
+        <ul><a href="{% url 'outline' %}">other </ul>
+    </nav>
+        </div>
+            <div class="check">
+                {% for offer in offers %}
+                    <h2>{{ offer.title }}</h2>
+                    <p>{{ offer.body }}</p>
+                    <small>{{ offer.body }}</small>
+                {% endfor %}
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1">Gift shopping and wrapping</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> Grocery Shopping</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> Mail delivery or pickup.</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle1">Dry-cleaning pickup and drop-off.</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2">Party or event preparation.</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> Pet sitting or trips to the veterinarian.</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle2">Basic house maintenance & de-cluttering.</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> Laundry</label><br>
+     </div>
+     <form action="action_page.php">
+        <div class="bananan">
+          <h1></h1>
+          <p>Please fill in this form to deliver your order.</p>
+          <hr>
+
+          <label for=""><b></b></label><br>
+          <input type="full name" placeholder="Enter full name" name="fn" id="fn" required><br>
+          <input type="text" placeholder="Enter Email" name="email" id="email" required><br>
+
+          <input type="address" placeholder="Enter Address" name="address" id="address" required><br>
+          <input type="phone number" placeholder="Enter Phone Number" name="phone number" id="phone number" required><br>
+
+          <input type="time" placeholder="time" name="psw-repeat" id="time" required>
+
+
+          <p>By fill in this form  you agree to our <a href="#">Terms & Privacy</a>.</p>
+          <button type="submit" class="registerbtn">submit</button>
+        </div>
+
+        </div>
+      </form>
+
+
+
+
+
+</div>
+
+
+
+
+</body>
+
+
+</html>
